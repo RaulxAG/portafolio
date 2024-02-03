@@ -1,0 +1,93 @@
+main {
+    .bento {
+        .proyectos {
+            background-image: url(../assets/img/cosmic-bg.webp);
+            background-size: cover;
+            background-blend-mode: difference;
+            background-position: bottom;
+            grid-column: 2/4;
+            grid-row: 2/4;
+            height: 100%;
+            position: relative;
+            perspective: 800px;
+            border-radius: 20px 5px 5px 20px;
+        }
+        
+        .proyectos p {
+            position: relative;
+            z-index: 2;
+            top: -8rem;
+            font-weight: bold;
+        }
+
+        .carrousel {
+            margin-bottom: 5rem;
+            width: 60%;
+            position: absolute;
+            animation: rotar 20s infinite linear; /* Adjusted the animation time for 6 images */
+            transform-style: preserve-3d;
+        }
+        
+        .carrousel:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+        
+        .carrousel figure {
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            transition: box-shadow .2s linear;
+            box-shadow: 0 0 3px 1px $color-lightgray;
+            border-radius: 10px;
+        }
+        
+        .carrousel figure:hover {
+            box-shadow: 0 0 3px 1px $color-pink;
+        }
+        
+        .carrousel img {
+            border-radius: 10px;
+            width: 100%;
+        }
+        
+        .carrousel img:hover {
+            cursor: url('../assets/img/pointer.png'), pointer;
+            transform: scale(1.1);
+            transition: all .5s linear;
+        }
+        
+        .carrousel figure:nth-child(1) {
+            transform: rotateY(0deg) translateZ(300px);
+        }
+        
+        .carrousel figure:nth-child(2) {
+            transform: rotateY(60deg) translateZ(300px);
+        }
+        
+        .carrousel figure:nth-child(3) {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        
+        .carrousel figure:nth-child(4) {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        
+        .carrousel figure:nth-child(5) {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        
+        .carrousel figure:nth-child(6) {
+            transform: rotateY(300deg) translateZ(300px);
+        }
+        
+        @keyframes rotar {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(300deg);
+            }
+        }
+    }
+}

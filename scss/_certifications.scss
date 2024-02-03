@@ -1,0 +1,31 @@
+main {
+    .bento {
+        .certificaciones {
+            width: 100%;
+            font-weight: bold;
+            @include displayFlex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            grid-column: 2/4;
+
+            .badges {
+                @include displayFlex;
+                gap: 3rem;
+            }
+
+            .badges a {
+                cursor: url("../assets/img/pointer.png"), pointer;
+            }
+
+            .badges img {
+                width: 7rem;
+                transition: transform .3s linear;
+            }
+
+            .badges img:hover {
+                transform: translateY(-.4rem);
+            }
+        }
+    }
+}

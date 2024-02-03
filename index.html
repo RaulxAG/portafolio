@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/script.js"></script>
+
+    <title>Proyecto Propio SASS - Portfolio</title>
+</head>
+<body>
+    <div class="content">
+        <!-- Cabecera -->
+        <header>
+            <h1 class="title">Raul Arroyo { <span>Web Developer</span> }</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/RaulxAG"><img src="assets/img/github.webp" alt="GitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/raul-arrgon/"><img src="assets/img/linkedin.webp" alt="LinkedIn"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin Cabecera -->
+        <!-- Main -->
+        <main>
+            <!-- Bento Grids -->
+            <div class="bento">
+
+                <!-- Section 1: Sobre mi -->
+                <section class="about">
+                    <figure>
+                        <img class="memoji" src="assets/img/memoji.webp" alt="Foto persona">
+                    </figure>
+                    <article class="text">
+                        <p>
+                            Desarrollo aplicaciones web con multitud de tecologías en tendencia.
+                        </p>
+                        <p>
+                            Actualmente estoy cursando <b>CFGS DAW</b>
+                        </p>
+                    </article>
+                </section>
+                <!-- Fin Section 1: Sobre mi -->
+
+                <!-- Section 2: Contacto -->
+                <section class="contacto">
+                    <p>¿Te gusta lo que ves?</p>
+                    <button class="button--bg">rarrgon.webdev@gmail.com</button>
+                </section>
+                <!-- Fin Section 2: Contacto -->
+                
+                <!-- Section 3: Tecnologías -->
+                <section class="tecnologias">
+                    <div>
+                        <img class="html tech" alt="html" title="HTML">
+                        <img class="css tech" alt="css" title="CSS">
+                        <img class="js tech" alt="js" title="JavaScript">
+                        <img class="react tech" alt="react" title="React">
+                        <img class="java tech" alt="java" title="Java">
+                        <img class="sql tech" alt="sql" title="SQL">
+                        <img class="php tech" alt="php" title="PHP">
+                    </div>
+                </section>
+                <!-- Fin Section 3: Tecnologias -->
+
+                <!-- Section 4: Proyectos Personales -->
+                <section class="proyectos">
+                    <p>Mis proyectos personales</p>
+                    <div class="carrousel">
+                        <figure><a href="https://raulxag.github.io/blog/" target="_blank"><img src="assets/img/project-cssBlog.png" alt=""></a></figure>
+                        <figure><a href="https://raulxag.github.io/Modal/" target="_blank"><img src="assets/img/project-Modal.png" alt=""></a></figure>
+                        <figure><a href="https://raulxag.github.io/BibliotecaReact/" target="_blank"><img src="assets/img/project-bibliotecaReact.png" alt=""></a></figure>
+                        <figure><a href="https://raulxag.github.io/ReactApp/" target="_blank"><img src="assets/img/project-MonsteDex.png" alt=""></a></figure>
+                        <figure><a href="https://raularroyo.informaticailiberis.com/php/X-RC/"  target="_blank"><img src="assets/img/project-XRC.png" alt=""></a></figure>
+                        <figure><a href="https://raulxag.github.io/fakeStore/" target="_blank"><img src="assets/img/project-fakeStore.png" alt=""></a></figure>
+                    </div>
+                </section>
+                <!-- Fin Section 4: Proyectos Personales -->
+
+                <!-- Section 5: Ubicación -->
+                <section class="ubicacion">
+                    <p class="txtUbi">Granada, España</p>
+                </section>
+                <!-- Fin Section 5: Ubicación -->
+
+                <!-- Section 6: Idiomas -->
+                <section class="idiomas">
+                    <article>
+                        <p>🇪🇸 Español</p>
+                        <p>🇬🇧 English</p>
+                    </article>
+                </section>
+                <!-- Fin Section 6: Idiomas -->
+                
+                <!-- Section 7: Info -->
+                <section class="info">
+                    <p>Optimizado para</p>
+                    <figure>
+                        <img src="assets/img/firefox.webp" width="50" alt="firefox">
+                        <img src="assets/img/Safari_browser_logo.webp" width="50" alt="safari">
+                    </figure>
+                </section>
+                <!-- Fin Section 7: Info -->
+
+                <!-- Section 8: Certificaciones / Cursos -->
+                <section class="certificaciones">
+                    <p>Certificaciones</p>
+                    <div class="badges">
+                        <a href="https://www.credly.com/badges/67e6d145-4d76-48cb-b2ff-082e39235b7b/public_url" target="_blank"><img src="assets/img/aws-cloudfoundations.png" alt="Amazon Web Services - Cloud Foundations" title="Amazon Web Services - Cloud Foundations"></a>
+                        <a href="https://www.credly.com/badges/7c346508-bb00-41b5-a767-6f39cf7e1c4d/public_url" target="_blank"><img src="assets/img/aws-clouddatapipelinebuilder.png" alt="Amazon Web Services - Cloud Data Pipeline Builder" title="Amazon Web Services - Cloud Data Pipeline Builder"></a>
+                    </div>
+                </section>
+                <!-- Fin Section 8: Certificaciones / Cursos -->
+
+                <!-- Section 9: Vector de Decoración -->
+                <section class="vector">
+
+                </section>
+                <!-- Fin Section 9: Vector de Decoración -->
+
+                <!-- Section 10: Tema Claro/Oscuro -->
+                <section class="tema">
+                    <button id="btnClaro" class="btnModo claro"><i class="fas fa-sun"></i></button>
+                    <button id="btnOscuro" class="btnModo oscuro"><i class="fas fa-moon"></i></button>
+                </section>
+                <!-- Fin Section 10: Tema Claro/Oscuro -->
+
+            </div>
+            <!-- Fin Bento Grids -->
+        </main>
+        <!-- Fin Main -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+main {
+    .bento {
+        .tema {
+            .btnModo {
+                font-size: 5rem;
+                background: none;
+                border: none;
+            }
+
+            .btnModo:hover {
+                cursor: url('../assets/img/pointer.png'), pointer;
+            }
+
+            .btnModo:last-child {
+                display: none;
+            }
+
+            .claro {
+                color: $color-light;
+            }
+
+            .oscuro {
+                color: $color-dark;
+            }
+        }
+    }
+}

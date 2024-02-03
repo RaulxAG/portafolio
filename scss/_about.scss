@@ -1,0 +1,59 @@
+main {
+    .bento {
+        .about:before {
+            @include configBefore;
+            border-radius: 15px;
+            // background-color: $color-lightgray;
+            background-color: #303030;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s;
+            z-index: -1;
+        }
+
+        .about:hover::before {
+            clip-path: circle(100% at center);
+            z-index: -1;
+        }
+
+        .about:hover .text {
+            color: #e3e3e2;
+            animation: bounce 1s;
+        }
+
+        .about:hover .memoji {
+            animation: showUp 1.7s;
+        }
+
+        .about:hover .text p:nth-child(2) {
+            opacity: 0;
+            color: #c0c0c0e5;
+            animation: show .7s 1s forwards;
+        }
+
+        .about {
+            position: relative;
+            grid-column: 1/4;
+            @include displayFlex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .memoji {
+                margin-top: 2.5rem;
+                width: 9rem;
+            }
+
+            .text {
+                padding: 25px;
+                text-align: left;
+                width: 50%;
+                font-size: 1.3rem;
+                font-weight: bold;
+                cursor: default;
+            }
+
+            .text p:nth-child(2) {
+                color: $color-lightgray;
+            }
+        }
+    }
+}

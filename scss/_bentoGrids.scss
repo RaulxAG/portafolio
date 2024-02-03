@@ -1,0 +1,28 @@
+main {
+    color: $color-light;
+    margin-top: .5rem;
+
+    .bento {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+
+        section {
+            overflow: hidden;
+            z-index: 1;
+            background-color: $color-gray;
+            border-radius: 15px;
+            padding: 15px;
+            height: 5rem;
+            @include displayFlex;
+            @include textCenter;
+            align-items: center;
+            justify-content: center;
+            height: 10rem;
+            font-size: 1.5rem;
+            position: relative;
+            box-shadow: 0 0 5px 1px $color-lightgray;
+        }
+    }
+}

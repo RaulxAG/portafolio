@@ -1,0 +1,17 @@
+main {
+    .bento {
+        .vector {
+            background-image: url('../assets/img/vector.jpg');
+            background-size: cover;
+            opacity: .8;
+            z-index: -1;
+            position: relative;
+        }
+
+        .vector::before {
+            @include configBefore;
+            box-shadow: inset 0 0 15px 5px #000;
+            z-index: 1;
+        }
+    }
+}
