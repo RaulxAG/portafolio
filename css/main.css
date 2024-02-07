@@ -391,7 +391,6 @@ main .bento .certificaciones .badges {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
 }
 main .bento .certificaciones .badges a {
   cursor: url("../assets/img/pointer.png"), pointer;
